@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 const UserItem = ({ user: { login, avatar_url, html_url } }) => {
   // Object destructuring, so everything doesn't have to start with this.props.user
@@ -23,7 +23,7 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
 };
 
 UserItem.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: propTypes.object.isRequired,
 };
 
 export default UserItem;
