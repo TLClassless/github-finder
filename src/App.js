@@ -11,7 +11,12 @@ class App extends Component {
     loading: false,
   };
 
-  searchUsers = (text) => {
+
+  // Search GH Users
+  searchUsers = async text => {
+    const res = await Axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+
+    )
     console.log(text);
   };
 
